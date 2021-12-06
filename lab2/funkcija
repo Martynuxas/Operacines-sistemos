@@ -1,0 +1,9 @@
+#!/bin/sh
+for i in $* ; do
+if grep -q $i zodynas;
+then
+echo "buvo"
+else
+echo "$i" >> zodynas;
+fi
+done

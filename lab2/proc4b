@@ -1,0 +1,18 @@
+#!/bin/sh
+s1='iveskite gimimo metus'
+s2='iveskite gimimo menesi'
+s3='iveskite gimimo diena'
+echo $s1
+read s1
+echo $s2
+read s2
+echo $s3
+read s3
+echo "metai: " $s1 "menesis: " $s2 "diena: " $s3
+dalyb1=$((s1/s2))
+dalyb2=$((s1/s3))
+liek1=$((s1%s2))
+liek2=$((s1%s3))
+suma=$((dalyb1+dalyb2))
+lieksand=$((liek1*liek2))
+echo "dalybu suma: " $suma "liekanu sandauga: " $lieksand

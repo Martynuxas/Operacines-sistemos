@@ -1,0 +1,12 @@
+#!/bin/sh
+if test -f $1
+then
+ if test -r $1
+  then
+  echo taip
+  else
+  echo ne
+  fi
+else
+ echo neina
+fi

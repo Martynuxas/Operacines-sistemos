@@ -1,0 +1,7 @@
+#!/bin/sh
+a=$1
+b=$2
+cat test | while read i; do
+echo $i | awk '{if ( $9 > a && $9 > b && $7 < a || $7 > a ) print $1,$3}'
+done
+

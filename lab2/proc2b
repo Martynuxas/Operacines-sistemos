@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Jusu id: " `id -u`
+echo "Jusu vardas: " `id -nu`
+echo "Jusu grupe: " `groups`

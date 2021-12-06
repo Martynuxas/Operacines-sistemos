@@ -1,0 +1,16 @@
+#!bin/sh
+if [ $# -gt 2 ]
+then
+echo "netinka"
+elif [ $# -lt 2 ]
+then
+echo "netinka"
+fi
+pirmas=`stat -c '%U' $1`
+antras=`stat -c '%U' $2`
+if [ $pirmas = $antras ]
+then
+echo $?
+else
+echo $?
+fi
